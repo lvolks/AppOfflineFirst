@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.dados.DadosUsuario">
+
+    <View
+        android:id="@+id/containerUser"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/container_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintStart_toStartOf="@id/containerUser"
+        app:layout_constraintEnd_toEndOf="@id/containerUser"
+        app:layout_constraintTop_toTopOf="@id/containerUser"
+        app:layout_constraintBottom_toBottomOf="@id/containerUser"
+        />
+
+    <ImageView
+        android:id="@+id/iconeUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/containerUser"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_person"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textNomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/containerUser"
+        app:layout_constraintStart_toEndOf="@id/iconeUser"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/iconeEmail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/iconeUser"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textEmailUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textNomeUser"
+        app:layout_constraintStart_toEndOf="@id/iconeEmail"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/bt_deslogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textEmailUser"
+        android:backgroundTint="@color/black"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:text="Deslogar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textEmailUser"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:text="Voltar"
+        style="@style/Button"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

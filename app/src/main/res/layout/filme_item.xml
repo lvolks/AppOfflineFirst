@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/fotoFilme"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/nopic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Alice"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/descricaoFilme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fotoFilme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descricaoFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filme de Fantasia"
+        app:layout_constraintTop_toBottomOf="@id/nomeFilme"
+        app:layout_constraintStart_toEndOf="@id/fotoFilme"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="2"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/precoFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:text="PREÇO R$ 30,00"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_goneMarginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toEndOf="@id/notaFilme"
+        app:layout_constraintTop_toBottomOf="@id/nomeFilme" />
+
+    <TextView
+        android:id="@+id/notaFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:text="Nota: 5"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toEndOf="@id/fotoFilme"
+        app:layout_constraintTop_toBottomOf="@id/descricaoFilme" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

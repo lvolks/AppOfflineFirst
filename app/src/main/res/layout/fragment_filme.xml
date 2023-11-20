@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.filme.FilmeFragment"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Informações do Filme"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labNome"
+        android:layout_margin="15dp"
+        style="@style/Edit_Text"
+        android:hint="Nome"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labDesc"
+        android:layout_margin="15dp"
+        style="@style/Edit_Text"
+        android:hint="Descrição"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labPreco"
+        android:layout_margin="15dp"
+        style="@style/Edit_Text"
+        android:hint="Preço"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labNota"
+        android:layout_margin="15dp"
+        style="@style/Edit_Text"
+        android:hint="Nota"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labFoto"
+        android:layout_margin="15dp"
+        style="@style/Edit_Text"
+        android:hint="Foto"
+        />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/SpinnerFoto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_margin="15dp" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:text="Salvar"
+        style="@style/Button"
+        android:textSize="24sp" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="dev.volks.applocadora.ui.filme.FilmesFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/lista_filmes"/>
+        <action
+            android:id="@+id/action_lista_to_filme"
+            app:destination="@id/filmeFragment"
+            />
+
+
+    <activity
+        android:id="@+id/nav_gallery"
+        android:name="dev.volks.applocadora.ui.dados.DadosUsuario"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="dev.volks.applocadora.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/filmeFragment"
+        android:name="dev.volks.applocadora.ui.filme.FilmeFragment"
+        android:label="fragment_filme"
+        tools:layout="@layout/fragment_filme" />
+
+</navigation>

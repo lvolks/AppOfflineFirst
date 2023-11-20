@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "875081264435",
+    "project_id": "applocadoraoffline",
+    "storage_bucket": "applocadoraoffline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875081264435:android:a755ba2551db2e33372246",
+        "android_client_info": {
+          "package_name": "dev.volks.applocadora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuUVp7vO1QGW39KbmKG7ByxU43AWGHJdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
